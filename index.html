@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything Marvel</title>
+
+    <!-- linking styles css file  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css link bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- JS script bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!-- Font Awesome Addition -->
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
+</head>
+<body style="background-color: black">
+    
+     <!-- Navigation Bar  -->
+     <section class="navmenu">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #e2001a;">
+                <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="100" height="30" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-light" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Phase-One">Phase 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Phase-Two">Phase 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Phase-Three">Phase 3</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Phase 4</a>
+                    </li> -->
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type ="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+        </nav>
+    </section>
+
+    <!-- MARVEL STUDIOS INTRO  -->
+    <div class="opening-theme" style="height:92vh;">
+        <video src="./videos/intro (online-video-cutter.com).mp4" autoplay muted width="100%" style="background-size: cover;"></video>
+    </div>
+      
+    <!-- Carousel Slide Show  -->
+    <section class="snap-slide">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel-img-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-img-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-img-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-img-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel-img-5.jpg" class="d-block w-100" alt="...">
+                </div>
+        </div>
+    </section>
+
+    <!-- Main Body section with multiple movie posters  -->
+    <section class="posters">
+        <div class="container-fluid"> 
+
+            <!-- PHASE ONE  -->
+            <div class="text-light Phase-nums" id="Phase-One">Phase One</div>
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/1.jpg" data-toggle="tooltip" data-placement="right" title="When Tony Stark, an industrialist, is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces to save the world." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/2.jpg" data-toggle="tooltip" data-placement="right" title="Dr Bruce Banner subjects himself to high levels of gamma radiation which triggers his transformation into a huge green creature, the Hulk, whenever he experiences negative emotions such as anger." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/3.jpg" data-toggle="tooltip" data-placement="left" title="Tony Stark is under pressure from various sources, including the government, to share his technology with the world. He must find a way to fight them while also tackling his other enemies." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/4.jpg" data-toggle="tooltip" data-placement="right" title="Thor is exiled by his father, Odin, the King of Asgard, to the Earth to live among mortals. When he lands on Earth, his trusted weapon Mjolnir is discovered and captured by S.H.I.E.L.D." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/5.jpeg" data-toggle="tooltip" data-placement="right" title="During World War II, Steve Rogers decides to volunteer in an experiment that transforms his weak body. He must now battle a secret Nazi organisation headed by Johann Schmidt to defend his nation." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/6.jpg" data-toggle="tooltip" data-placement="left" title="Nick Fury is compelled to launch the Avengers Initiative when Loki poses a threat to planet Earth. His squad of superheroes put their minds together to accomplish the task." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <!-- PHASE TWO  -->
+            <div class="text-light Phase-nums" id="Phase-Two">Phase Two</div>
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/7.jpg" data-toggle="tooltip" data-placement="right" title="Tony Stark encounters a formidable foe called the Mandarin. After failing to defeat his enemy, Tony embarks on a journey of self-discovery as he fights against the powerful Mandarin." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/8.jpg" data-toggle="tooltip" data-placement="right" title="Thor sets out on a journey to defeat Malekith, the leader of the Dark Elves when he returns to Asgard to retrieve a dangerous weapon and fulfill his desire of destroying the Nine Realms." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/9.jpg" data-toggle="tooltip" data-placement="left" title="As Steve Rogers adapts to the complexities of a contemporary world, he joins Natasha Romanoff and Sam Wilson in his mission to uncover the secret behind a deadly, mysterious assassin." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/10.jpg" data-toggle="tooltip" data-placement="right" title="Peter escapes from the planet Morag with a valuable orb that Ronan the Accuser wants. He eventually forms a group with unwilling heroes to stop Ronan." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/11.jpg" data-toggle="tooltip" data-placement="right" title="Tony Stark builds an artificial intelligence system named Ultron with the help of Bruce Banner. When the sentient Ultron makes plans to wipe out the human race, the Avengers set out to stop him." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/12.jpg" data-toggle="tooltip" data-placement="left" title="Despite being under house arrest, Scott Lang, along with the Wasp, sets out to help Dr Hank Pym to enter the quantum realm as they face new enemies along the way." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <!-- PHASE THREE  -->
+            <div class="text-light Phase-nums" id="Phase-Three">Phase Three</div>
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/13.jpg" data-toggle="tooltip" data-placement="right" title="Friction arises between the Avengers when one group supports the government's decision to implement a law to control their powers while the other opposes it." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/14.jpg" data-toggle="tooltip" data-placement="right" title="In an accident, Stephen Strange, a famous neurosurgeon, loses the ability to use his hands. He goes to visit the mysterious Ancient One to heal himself and becomes a great sorcerer under her tutelage." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/15.jpeg" data-toggle="tooltip" data-placement="left" title="After a successful mission, Quill and his team of galactic defenders meet Ego, a man claiming to be Quill's father. However, they soon learn some disturbing truths about Ego." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/16.jpg" data-toggle="tooltip" data-placement="right" title="Peter Parker tries to stop the Vulture from selling weapons made with advanced Chitauri technology while trying to balance his life as an ordinary high school student." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/17.png" data-toggle="tooltip" data-placement="right" title="Deprived of his mighty hammer Mjolnir, Thor must escape the other side of the universe to save his home, Asgard, from Hela, the goddess of death." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/18.jpg" data-toggle="tooltip" data-placement="left" title="After his father's death, T'Challa returns home to Wakanda to inherit his throne. However, a powerful enemy related to his family threatens to attack his nation." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/19.jpg" data-toggle="tooltip" data-placement="right" title="The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/20.jpg" data-toggle="tooltip" data-placement="right" title="Despite being under house arrest, Scott Lang, along with the Wasp, sets out to help Dr Hank Pym to enter the quantum realm as they face new enemies along the way." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col d-flex justify-content-center Posterno3">
+                    <img src="images/21.jpg" data-toggle="tooltip" data-placement="left" title="Amidst a mission, Vers, a Kree warrior, gets separated from her team and is stranded on Earth. However, her life takes an unusual turn after she teams up with Fury, a S.H.I.E.L.D. agent." alt="" class="movieposter">
+                </div>
+            </div>
+
+            <div class="row spacebetweenrows">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/22.jpg" data-toggle="tooltip" data-placement="right" title="After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance." alt="" class="movieposter">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center">
+                    <img src="images/23.jpg" data-toggle="tooltip" data-placement="right" title="Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on holiday in Europe. Soon, he receives help from Mysterio, a fellow hero with mysterious origins." alt="" class="movieposter">
+                </div>
+            </div>
+        </div> 
+    </section>
+</body>
+</html>

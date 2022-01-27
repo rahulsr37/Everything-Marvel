@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.movieposter{
+    width: 200px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+}
+
+.movieposter:hover{
+    cursor: pointer;
+    padding: 2px;
+    background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+
+}
+.posters{
+    margin: 20px 0px 20px;
+    padding: 50px 50px 0px 50px;
+}
+.spacebetweenrows{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.Phase-nums{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    width: 270px;
+    border-bottom: 1px solid red;  
+}
+.carousel-item{
+    height: 750px;
+}
+
+/* Media Query  */
+@media (max-width: 575.98px) { 
+    .movieposter{
+        width: 100px;
+        height: 150px;
+    }
+    
+    .opening-theme{
+        height: 25vh;
+        margin-top: 55px;
+    }
+
+    .Posterno3{
+        margin-top: 30px;
+    }
+ }
